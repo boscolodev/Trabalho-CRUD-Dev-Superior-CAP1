@@ -1,47 +1,38 @@
-package com.devsuperior.crudfinal.trabfinal.entities;
+package com.devsuperior.crudfinal.trabfinal.dto;
 
+import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import com.devsuperior.crudfinal.trabfinal.entities.Client;
 
-@Entity
-@Table(name = "tb_client")
-public class Client {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+public class ClientDTO implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
 	private String name;
 	private String cpf;
 	private Double income;
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant birthDate;
 	private Integer children;
 	
-	public void Cliente() {
+	public ClientDTO() {
 		
 	}
 
-	public Client(String name, String cpf, Double income, Instant birthDate, Integer children) {
+	public ClientDTO(String name, String cpf, Double income, Instant birthDate, Integer children) {
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
 		this.birthDate = birthDate;
 		this.children = children;
 	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
+	
+	public ClientDTO(Client entity) {
+		this.name = entity.getName();
+		this.cpf = entity.getCpf();
+		this.income = entity.getIncome();
+		this.birthDate = entity.getBirthDate();
+		this.children = entity.getChildren();
 	}
 
 	public String getName() {
@@ -89,18 +80,6 @@ public class Client {
 		return Objects.hash(cpf);
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Client other = (Client) obj;
-		return Objects.equals(cpf, other.cpf);
-	}
 
-	
 	
 }

@@ -1,0 +1,10 @@
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Guilherme', '123.456.789-00', 750.00,'1998-06-07T10:30:00Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Hevelyn ', '456.789.123.00', 850.00,'1998-06-07T10:30:00Z' , 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Carolina ', '789.132.456-00', 1750.00,'1998-06-07T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Luisa ', '123.789.456-00', 3750.00,'1998-06-07T10:30:00Z', 3);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Herica ', '147.258;369-00', 750.00,'1998-06-07T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Thiago ', '369.258.147', 4750.00,'1998-06-07T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Nelci ', '258.147.369-00', 8450.00,'1998-06-07T10:30:00Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Molly Chambers', '953.157.486-00', 750.00,'1998-06-07T10:30:00Z',  0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Melchior', '357;159;456-00', 750.00,'1998-06-07T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Olivia', '153.486.729-00', 750.00,'1998-06-07T10:30:00Z', 0);
