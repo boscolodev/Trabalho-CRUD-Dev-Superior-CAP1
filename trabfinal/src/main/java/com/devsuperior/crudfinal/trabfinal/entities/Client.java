@@ -24,7 +24,7 @@ public class Client {
 	private Instant birthDate;
 	private Integer children;
 	
-	public void Cliente() {
+	public Client() {
 		
 	}
 
@@ -35,6 +35,7 @@ public class Client {
 		this.birthDate = birthDate;
 		this.children = children;
 	}
+
 
 	public Long getId() {
 		return id;
